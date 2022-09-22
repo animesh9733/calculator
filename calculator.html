@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="in">
+            <input type="text" id="input" disabled >
+        </div>
+        <div class="number">
+           <table>
+            <tr>
+                <td id="ac" onclick="display('ac')">Ac</td>
+                <td id="del" onclick="display('del')">Del</td>
+                <td onclick="display('/')">/</td>
+                <td onclick="display('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="display(1)">1</td>
+                <td onclick="display(2)">2</td>
+                <td onclick="display(3)">3</td>
+                <td onclick="display('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="display(4)">4</td>
+                <td onclick="display(5)">5</td>
+                <td onclick="display(6)">6</td>
+                <td onclick="display('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="display(7)">7</td>
+                <td onclick="display(8)">8</td>
+                <td onclick="display(9)">9</td>
+                <td onclick="display('=')" id="equal" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td onclick="display(0)" colspan="2">0</td>
+                <td onclick="display('.')">.</td>
+               
+               
+            </tr>
+           </table>
+        </div>
+
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>&copy;animeshghoroi</p>
+
+    <p>version 2.0</p>
+
+    <script src="calculator.js"></script>
+    
+</body>
+</html>
